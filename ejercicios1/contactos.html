@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Agencia de Viajes</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-image: url('https://c0.wallpaperflare.com/preview/930/1012/960/brazil-florianopolis-praia-do-rio-das-pacas-range.jpg');
+          background-size: cover;
+          background-position: center;
+      }
+      nav {
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 10px;
+          text-align: center;
+      }
+      nav a {
+          text-decoration: none;
+          color: #333;
+          margin: 0 10px;
+      }
+      header {
+          background-color: rgba(0, 0, 0, 0.7);
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+      }
+      main {
+          padding: 20px;
+          background-color: rgba(255, 255, 255, 0.8);
+          border-radius: 10px;
+          margin: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1, h2 {
+          color: #091f4e;
+      }
+      form {
+          margin-top: 20px;
+      }
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+      input[type="submit"] {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      input[type="submit"]:hover {
+          background-color: #555;
+      }
+  </style>
+  </head>
+  <body>
+    <header>
+      <h1>Información de Contacto</h1>
+    </header>
+    <main>
+      <h2>Dirección:</h2>
+      <p>123 Calle Principal, Ciudad, País</p>
+
+      <h2>Teléfono:</h2>
+      <p>+1234567890</p>
+
+      <h2>Correo Electrónico:</h2>
+      <p>info@agenciadeviajes.com</p>
+
+      <h2>Horario de Atención:</h2>
+      <p>Lunes a Viernes: 9:00 am - 5:00 pm</p>
+      <h2>Formulario de Contacto:</h2>
+      <form action="submit.php" method="post">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br />
+        <label for="email">Correo Electrónico:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea
+        ><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

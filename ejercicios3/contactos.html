@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafetería Local - Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://c4.wallpaperflare.com/wallpaper/527/580/60/tiles-cafeteria-chair-everlasting-summer-wallpaper-preview.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      width: 80%;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #555;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px 0;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <section>
+    <h2>Contáctanos</h2>
+    <p>Estamos ubicados en:</p>
+    <p>123 Calle Principal, Ciudad</p>
+    <p>Teléfono: (123) 456-7890</p>
+    <p>Correo electrónico: info@cafeteria.com</p>
+    <p>Horario de atención:</p>
+    <p>Lunes a Viernes: 8:00am - 6:00pm</p>
+    <p>Sábado y Domingo: 9:00am - 5:00pm</p>
+    <form action="/enviar" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Cafetería Local</p>
+  </footer>
+
+</body>
+</html>

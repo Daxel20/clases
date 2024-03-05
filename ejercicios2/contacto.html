@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Tienda de Productos Orgánicos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url("https://th.bing.com/th/id/OIP.nuyRi1OYLzJ_D3ZCIoUjkAHaE8?rs=1&pid=ImgDetMain"); 
+        background-size: cover;
+        background-position: center;
+        color: #00a008;
+      }
+      nav {
+        background-color: #333;
+        padding: 15px;
+        text-align: center;
+      }
+      nav a {
+        text-decoration: none;
+        color: #dbc1c1;
+        margin: 0 15px; 
+        font-size: 18px; 
+        font-weight: bold; 
+      }
+      nav a:hover {
+        color: #ff0;
+      }
+      header {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        padding: 20px;
+      }
+      h1,
+      h2,
+      h3 {
+        color: #8a570b;
+      }
+      form {
+        background-color: rgba(54, 2, 2, 0.8); /* Fondo semi-transparente */
+        padding: 20px;
+        border-radius: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      input[type="submit"] {
+        background-color: #333;
+        color: #ceb8b8;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #c0bbbb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Información de Contacto</h1>
+    </header>
+    <main>
+      <p>
+        Encuentra aquí la información de la tienda y un formulario para
+        consultas sobre productos o pedidos.
+      </p>
+      <div>
+        <h2>Dirección:</h2>
+        <p>123 Calle Principal, Ciudad, País</p>
+
+        <h2>Teléfono:</h2>
+        <p>+123 456 789</p>
+
+        <h2>Correo Electrónico:</h2>
+        <p>info@tiendaalimentos.com</p>
+
+        <h2>Horario de Atención:</h2>
+        <p>Lunes a Viernes: 9am - 6pm</p>
+      </div>
+
+      <h2>Formulario de Consulta:</h2>
+      <form action="/enviar_consulta" method="post">
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br /><br />
+
+        <label for="email">Correo Electrónico:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea
+        ><br /><br />
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

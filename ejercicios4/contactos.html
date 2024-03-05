@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Academia de Idiomas</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://c4.wallpaperflare.com/wallpaper/242/236/855/mountains-river-snow-forest-wallpaper-preview.jpg');
+        background-size: cover;
+        background-position: center;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+  
+      header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+  
+      main {
+        padding: 20px;
+      }
+  
+      section {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+  
+      h1, h2 {
+        color: #333;
+      }
+  
+      form {
+        margin-top: 20px;
+      }
+  
+      label {
+        font-weight: bold;
+      }
+  
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+  
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      input[type="submit"]:hover {
+        background-color: #555;
+      }
+  
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <nav></nav>
+    <header>
+      <h1>Información de Contacto</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Dirección</h2>
+        <p>Calle Principal 123, Ciudad, País</p>
+
+        <h2>Teléfono</h2>
+        <p>+123 456 789</p>
+
+        <h2>Correo Electrónico</h2>
+        <p>info@academiadeidiomas.com</p>
+
+        <h2>Horario de Atención</h2>
+        <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+
+        <h2>Formulario de Contacto</h2>
+        <form action="/submit_form" method="post">
+          <label for="nombre">Nombre:</label><br />
+          <input type="text" id="nombre" name="nombre" required /><br />
+          <label for="correo">Correo Electrónico:</label><br />
+          <input type="email" id="correo" name="correo" required /><br />
+          <label for="mensaje">Mensaje:</label><br />
+          <textarea id="mensaje" name="mensaje" required></textarea><br />
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
